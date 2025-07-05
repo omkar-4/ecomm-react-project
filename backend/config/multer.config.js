@@ -1,6 +1,6 @@
 const FirebaseStorage = require("multer-firebase-storage");
 const fbAdmin = require("./firebase.config");
-const serviceCredentials = require("./ecomm-react-project-firebase-adminsdk.json");
+const serviceCredentials = require("../etc/secret/ecomm-react-project-firebase-adminsdk.json");
 const multer = require("multer");
 
 const storage = FirebaseStorage({
