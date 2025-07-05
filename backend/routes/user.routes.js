@@ -40,13 +40,13 @@ router.get(
 router.get(
   "/order/:id",
   authMiddleware.isAuthenticated,
-  userController.getOrderById
+  userController.createOrder
 );
 
 router.get(
   "/verify/:id",
   authMiddleware.isAuthenticated,
-  userController.verify
+  userController.verifyPayment
 );
 
 module.exports = router;
